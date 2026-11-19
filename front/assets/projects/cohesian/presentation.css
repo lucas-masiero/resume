@@ -1,0 +1,47 @@
+/* Optional, scoped presentation stylesheet. Existing portfolio design preserved. */
+.cohesian-presentation{--mono:'Courier New',monospace;--green:#44613d;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:normal;color:#242c26}
+.cohesian-presentation,.cohesian-presentation *{box-sizing:border-box}
+.cohesian-presentation a{color:inherit;text-decoration:none}
+.cohesian-presentation .text-link{display:inline-flex;align-items:center;font-weight:500;border-bottom:1px solid transparent;padding-block:5px}
+.cohesian-presentation .text-link:hover{border-bottom-color:currentColor}
+.cohesian-presentation .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.cohesian-presentation{margin-top:24px;min-width:0}
+.cohesian-presentation.organization-card--with-book{display:grid;grid-template-columns:180px minmax(0,1fr);gap:35px;align-items:center}
+.cohesian-presentation .organization-details{background:#fbf4e6;border:1px solid #e4d8c5;border-radius:7px;overflow:hidden;min-width:0}
+.cohesian-presentation .organization-book{display:flex;flex-direction:column;align-items:flex-start;gap:9px;color:#76532d;width:100%;max-width:180px}
+.cohesian-presentation .organization-book-cover{display:block;width:100%;border-radius:2px 5px 5px 2px;overflow:hidden;border-left:5px solid #b7803e;box-shadow:5px 7px 0 #ae9b7825,0 10px 22px #3f2b1617;transform:rotate(-3deg);transition:transform .2s,box-shadow .2s}
+.cohesian-presentation .organization-book-image{display:block;width:100%;height:auto;object-fit:contain}
+.cohesian-presentation .organization-book:hover .organization-book-cover,.cohesian-presentation .organization-book:focus-visible .organization-book-cover{transform:rotate(0deg) translateY(-4px);box-shadow:6px 12px 0 #ae9b7820,0 14px 26px #3f2b1620}
+.cohesian-presentation .organization-book:focus-visible{outline:2px solid var(--green);outline-offset:9px;border-radius:3px}
+.cohesian-presentation .organization-book-title{font:14px Georgia,serif;margin-top:12px}
+.cohesian-presentation .organization-book-label{font-size:10px;line-height:1.6}
+.cohesian-presentation .organization-summary{padding:32px 35px}
+.cohesian-presentation .organization-brand{display:flex;align-items:center;gap:15px;min-height:49px}
+.cohesian-presentation .organization-wordmark{width:min(230px,calc(100% - 60px));height:auto;max-width:100%}
+.cohesian-presentation .organization-emblem{width:38px;height:46px;object-fit:contain}
+.cohesian-presentation .organization-name{font-size:30px;font-weight:500;margin:0}
+.cohesian-presentation .organization-meta{font:9px var(--mono);color:#8b7352;text-transform:uppercase;letter-spacing:1px;margin:17px 0}
+.cohesian-presentation .organization-meta span{padding-inline:7px}
+.cohesian-presentation .organization-tagline{font:23px/1.35 Georgia,serif;letter-spacing:-.5px;color:#46341e;margin:17px 0}
+.cohesian-presentation .organization-description{font-size:13px;line-height:1.85;color:#736550;margin:0}
+.cohesian-presentation .organization-links{display:flex;gap:10px 19px;flex-wrap:wrap;margin-top:21px;color:#76532d}
+.cohesian-presentation .organization-links .text-link{font-size:11px;gap:6px}
+.cohesian-presentation .organization-principles{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;padding:25px 34px 29px;border-top:1px solid #e7dbc8}
+.cohesian-presentation .organization-principles h4{font:10px var(--mono);letter-spacing:.8px;text-transform:uppercase;color:#a16828;margin:0 0 10px}
+.cohesian-presentation .organization-principles p{font-size:12px;line-height:1.7;color:#7b6a54;margin:0}
+@media(max-width:1000px){.cohesian-presentation.organization-card--with-book{grid-template-columns:155px minmax(0,1fr);gap:28px}
+.cohesian-presentation .organization-summary{padding:25px}
+.cohesian-presentation .organization-tagline{font-size:21px}
+.cohesian-presentation .organization-principles{grid-template-columns:repeat(2,1fr);gap:24px}
+}
+@media(max-width:700px){.cohesian-presentation.organization-card--with-book{grid-template-columns:130px minmax(0,1fr);gap:22px}
+.cohesian-presentation .organization-summary{padding:28px}
+.cohesian-presentation .organization-principles{padding:24px 28px}
+.cohesian-presentation .organization-tagline{font-size:25px}
+}
+@media(max-width:600px){.cohesian-presentation.organization-card--with-book{grid-template-columns:minmax(0,1fr);gap:28px}
+.cohesian-presentation .organization-book{max-width:140px;margin-inline:auto}
+.cohesian-presentation .organization-principles{gap:22px 18px}
+.cohesian-presentation .organization-principles p{font-size:11px}
+.cohesian-presentation .organization-wordmark{width:min(230px,calc(100% - 60px))}
+}

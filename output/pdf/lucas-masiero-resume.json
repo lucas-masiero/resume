@@ -1,0 +1,279 @@
+{
+  "schema_version": 2,
+  "person": {
+    "name": "Lucas Masiero",
+    "headline": "Backend Software Engineer | Go & Python | Systems Design & Developer Tools",
+    "email": "lucasmasiero38@gmail.com",
+    "phone": "+54 9 11 4167-7861",
+    "website": {
+      "label": "Cohesian",
+      "url": "https://cohesian.org"
+    },
+    "linkedin": "https://www.linkedin.com/in/lucas-masiero-45723114b/",
+    "profile_pic": "assets/profile.png"
+  },
+  "sections": {
+    "sidebar": {
+      "profile": {
+        "title": "Profile",
+        "paragraphs": [
+          "Greater Buenos Aires, Argentina",
+          "Go/Python software engineer with production experience in Mercado Libre Fulfillment Inbounds, freelance integrations, and corporate Go instruction. Builds Cohesian infrastructure and developer tools. Designs evolvable systems through composition, explicit contracts, and clear responsibility boundaries, using graph models to reason about dependencies, local interactions, and overall behavior."
+        ]
+      },
+      "languages": {
+        "title": "Languages",
+        "items": [
+          {
+            "name": "English",
+            "proficiency": "C1"
+          }
+        ]
+      },
+      "skills": {
+        "title": "Technical Skills",
+        "groups": {
+          "Backend": [
+            "Go (primary)",
+            "Python",
+            "Rust",
+            "Django",
+            "FastAPI",
+            "Node.js"
+          ],
+          "Frontend": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Vanilla JavaScript"
+          ],
+          "Databases": [
+            "PostgreSQL",
+            "Redis",
+            "MongoDB",
+            "MySQL",
+            "SQLite",
+            "Neo4j",
+            "[Josly](https://github.com/cohesian-tools/josly) (lightweight JSON store)"
+          ],
+          "Infrastructure": [
+            "Docker",
+            "Docker Compose",
+            "Kubernetes"
+          ],
+          "Cloud": [
+            "Fury",
+            "Cloudflare Workers / Pages",
+            "Heroku"
+          ],
+          "Delivery & Operations": [
+            "Git",
+            "GitHub Actions",
+            "Jenkins",
+            "CI/CD",
+            "Staged rollouts",
+            "Observability",
+            "On-call response"
+          ],
+          "Systems": [
+            "REST APIs",
+            "Microservices",
+            "Monoliths",
+            "Go concurrency (goroutines/channels)",
+            "Queues / jobs / workers",
+            "State machines"
+          ],
+          "System Design": [
+            "Graph topologies",
+            "Set/category theory",
+            "Composite trees",
+            "ER/UML",
+            "Explicit contracts",
+            "Responsibility/knowledge boundaries",
+            "Replaceable infrastructure",
+            "Coupling/evolution trade-offs"
+          ],
+          "Engineering Practices": [
+            "Strategy",
+            "Composite",
+            "Decorator",
+            "Middleware",
+            "Testing",
+            "Error handling"
+          ],
+          "AI-assisted Engineering": [
+            "Architecture guidance",
+            "Task decomposition",
+            "Agent skills",
+            "Bounded context",
+            "Database MCP connections and permissions",
+            "Human code review and validation"
+          ],
+          "Tools & Publishing": [
+            "Python libraries / CLIs",
+            "Schema validation",
+            "Versioned packages",
+            "Layered configuration",
+            "Astro",
+            "Markdown",
+            "Jupyter",
+            "Quarto",
+            "Rendering pipelines"
+          ]
+        }
+      },
+      "education": {
+        "title": "Education & Independent Study",
+        "entries": [
+          {
+            "title": "UBA - Licenciatura en Sistemas",
+            "paragraphs": [
+              "Approximately 60% of the program completed; degree not completed."
+            ]
+          },
+          {
+            "title": "UBA - Business Administration & Accounting",
+            "period": "2016 - 2022",
+            "paragraphs": [
+              "Approximately 95% of studies completed; degree not completed."
+            ]
+          },
+          {
+            "title": "UTN - Information Systems Engineering",
+            "period": "Sep 2026 - Present",
+            "paragraphs": [
+              "Enrolled; pursuing the formal engineering degree."
+            ]
+          },
+          {
+            "title": "Independent Study",
+            "period": "2021 - Present",
+            "bullets": [
+              "_Introduction to Algorithms_ (CLRS): approximately 50% read; algorithms, data structures, exercises, and LeetCode-style practice.",
+              "_Concurrency in Go_ - Katherine Cox-Buday: read in full; applied goroutines and channels in personal Go utilities.",
+              "_Enterprise Integration Patterns_ and _Designing Data-Intensive Applications, 2nd Edition_: substantial reading on messaging, reliability, scalability, and design trade-offs.",
+              "Analysis: Big O/Omega/Theta; graph, set, and category theory; discrete math, linear algebra, calculus, probability."
+            ]
+          }
+        ]
+      },
+      "interests": {
+        "title": "Interests",
+        "paragraphs": [
+          "Chess, Tango logic puzzles, Rocket League, mathematics, physics, and quantum mechanics."
+        ]
+      }
+    },
+    "main": {
+      "experience": {
+        "title": "Professional Experience",
+        "entries": [
+          {
+            "title": "Software Engineer - Mercado Libre",
+            "subtitle": "Full-time | Fulfillment Inbounds | Hybrid",
+            "period": "Mar 2025 - Feb 2026",
+            "location": "Latin America",
+            "bullets": [
+              "Designed and implemented Go APIs for Fulfillment Inbounds: shipment data, historical records, state-machine workflows, warehouse receptions, and jobs for data cleanup and migration.",
+              "Supported shipment tracking from seller pickup or drop-off through warehouse reception across Argentina, Brazil, Chile, Colombia, Mexico, Peru, and Uruguay, including cross-border trade flows.",
+              "Applied Strategy, Composite, and Decorator patterns and middleware; maintained unit, integration, end-to-end, and smoke tests.",
+              "Worked with GitHub Actions/Jenkins release pipelines and Fury deployments, using platform-managed queues, jobs, workers, and service metrics.",
+              "Investigated service behavior through observability metrics and upstream/downstream microservice dependency maps; participated in on-call incident response.",
+              "Planned migrations and staged rollouts, evaluated technical trade-offs, and delivered changes through pull requests, code reviews, Jira, and collaborative technical planning."
+            ]
+          },
+          {
+            "title": "Bootcamp Instructor - Alkemy",
+            "period": "Oct 2024 - Mar 2025",
+            "bullets": [
+              "Taught classes of 30 students, covering Git, Go web applications, databases, and testing through interactive coding sessions."
+            ],
+            "subtitle": "Remote Go instruction"
+          },
+          {
+            "title": "Go Bootcamp Instructor - Digital House",
+            "period": "Jun 2022 - May 2024",
+            "bullets": [
+              "Taught Go and computer-science fundamentals in four-month cohorts of 60 students for corporate clients, including Mercado Libre.",
+              "Defined training content with client software experts, iterated course materials, and recorded technical videos covering Git, web applications, databases, and testing."
+            ],
+            "subtitle": "Remote corporate training"
+          },
+          {
+            "title": "Freelance Software Developer - NOUNOU client assignments",
+            "period": "2020 - 2021",
+            "bullets": [
+              "Built a simple provider-facing interface and a workflow for provider-specific invoicing and location lookup through Google Maps API.",
+              "Used Django, Docker/Docker Compose, Redis caching, and Heroku; explored later frontend iterations in React and alternative backend prototypes in FastAPI and Go.",
+              "Built a Python invoicing script using authenticated AFIP XML web services and PDF generation.",
+              "Built a telephone-call transcription CLI to launch jobs on a client-provided remote computer; integrated Google speech services and configured service access/credentials through the Google Cloud console."
+            ],
+            "subtitle": "Client web development and automation"
+          }
+        ]
+      },
+      "projects": {
+        "title": "Projects",
+        "entries": [
+          {
+            "title": "[Cohesian](https://cohesian.org) - Independent Education & Research",
+            "subtitle": "Founder, software engineer and author",
+            "period": "Mar 2026 - Present",
+            "paragraphs": [
+              "Founded Cohesian to connect mathematics, computing, physics, and complex systems through writing, visual explanations, and developer tools. Personally created the tools and authored the books presented through the initiative."
+            ],
+            "bullets": [
+              "[k-graph](https://github.com/cohesian-tools/k-graph): built a Node.js CLI and reusable validation library for Topic/Chapter/Lecture graphs, stable UUID references, directory/ZIP persistence, and HTML, PDF and frontend distribution with themes.",
+              "[Loci](https://github.com/cohesian-tools/loci): built a Python/Manim layer for narrated educational scenes, composable resources, graphs, 2D/3D planes, timelines and configuration, with companion CLI/plugin workflows.",
+              "[Tether](https://github.com/cohesian-tools/tether): built resource discovery, validation, resolution and materialization contracts with SHA-256 verification; separates exact copies from transformed publications.",
+              "[Josly](https://github.com/cohesian-tools/josly): built a standard-library JSON store and CLI with portable typed schemas, filters, projections and JSON Pointer writes; protects records with revisions, locks, atomic replacement and confined paths.",
+              "[Resumy](https://github.com/cohesian-tools/resumy): built an offline Python/ReportLab CV and letter generator with strict JSON validation, layered themes, configurable sections, typography and pagination.",
+              "[Optional](https://github.com/cohesian-tools/optional): developed generic optional and nullable Go types with JSON serialization.",
+              "Built Cohesian's static Home, Tools and Bookshelf site with Astro and Cloudflare, schema-validated catalogs and portable front presentation packages. Core defines the initiative's principles and identity."
+            ]
+          },
+          {
+            "title": "[HomeSolution Research Pipeline](https://github.com/lucas-masiero/pj-homesolution) - Agent-Assisted Provider Research",
+            "bullets": [
+              "Built a Python workflow to research household professionals. A coordinator delegates computer use, HTML-to-JSON/evidence extraction, rule-based profiling, and review analysis through scoped context/result contracts and scripted input/output checks.",
+              "Josly validates records, revisions/history, provenance, snapshots, and status; input/prompt/context hashes flag missing/completed/stale work. Markdown/PDF reports use snapshots/manifests separately from canonical storage. Gasfitter workflow implemented; other trades need rubrics. Ranking/additional caching planned."
+            ],
+            "subtitle": "Independent software project"
+          },
+          {
+            "title": "[LeetCode](https://github.com/lucas-masiero/leetcode) - Algorithms & Data Structures Practice",
+            "subtitle": "Personal learning project",
+            "bullets": [
+              "Practiced algorithms and data structures in Python/Jupyter and Go, including recursion, dynamic programming, trees and heaps."
+            ]
+          }
+        ]
+      },
+      "authored_books": {
+        "title": "Authored Books",
+        "entries": [
+          {
+            "title": "[Introduction to Golang](https://cohesian.org/bookshelf/)",
+            "subtitle": "Author - introductory Go textbook",
+            "paragraphs": [
+              "An introductory book on Go language fundamentals and standard-library essentials, with self-tests, exercises and worked solutions. A complete Chapter 1 teaser is available."
+            ]
+          },
+          {
+            "title": "[Bookly Up - Introduction to System Architecture](https://cohesian.org/bookshelf/)",
+            "subtitle": "Author - 1st Edition: System Architecture",
+            "paragraphs": [
+              "A language-independent guide to designing a booking system through relationships, responsibility boundaries, state models and time constraints."
+            ],
+            "bullets": [
+              "Separated Site, Auth, Booking and Payment responsibilities; explained identity, signing/verification, localized users, resource ownership, listings and frozen booking terms.",
+              "Modeled booking lifecycles and overlapping Operation, Reserved and Historical state families. Distinguished trip intervals from state lifespans, State Time Constraints from calendar occupancy, and live payment holds from non-reserving proposals.",
+              "Derived availability from offered time minus live allocations and checked the whole requested interval for bookability. Separated Booking-owned cancellation/refund entitlement from Payment execution and verified financial outcomes.",
+              "The first edition establishes the architecture. Two further editions are planned: 2nd Edition - Modules Implementation, followed by 3rd Edition - Infrastructure, covering runtime topology, deployment and operations."
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

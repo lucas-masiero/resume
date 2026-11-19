@@ -1,0 +1,218 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portable project presentation v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "kind",
+    "id",
+    "title",
+    "tagline",
+    "description",
+    "founded",
+    "labels",
+    "stylesheet",
+    "branding",
+    "presentation",
+    "principlesLabel",
+    "principles",
+    "links",
+    "licenses"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "kind": {
+      "const": "project"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "tagline": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "description": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "founded": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "uniqueItems": true
+    },
+    "stylesheet": {
+      "const": "presentation.css"
+    },
+    "branding": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "banner": {
+          "$ref": "#/definitions/image"
+        },
+        "wordmark": {
+          "$ref": "#/definitions/image"
+        },
+        "wordmarkInverse": {
+          "$ref": "#/definitions/image"
+        },
+        "emblem": {
+          "$ref": "#/definitions/image"
+        }
+      }
+    },
+    "presentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "label",
+        "cover",
+        "link"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "label": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "cover": {
+          "$ref": "#/definitions/image"
+        },
+        "link": {
+          "$ref": "#/definitions/link"
+        }
+      }
+    },
+    "principlesLabel": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "description"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "description": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/link"
+      }
+    },
+    "licenses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "href": {
+            "type": "string",
+            "pattern": "^assets/(?:[A-Za-z0-9_-][A-Za-z0-9_.-]*/)*[A-Za-z0-9_-][A-Za-z0-9_.-]*$"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "src",
+        "alt",
+        "width",
+        "height",
+        "fit"
+      ],
+      "properties": {
+        "src": {
+          "type": "string",
+          "pattern": "^assets/(?:[A-Za-z0-9_-][A-Za-z0-9_.-]*/)*[A-Za-z0-9_-][A-Za-z0-9_.-]*\\.(svg|png)$"
+        },
+        "alt": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "fit": {
+          "enum": [
+            "contain",
+            "cover"
+          ]
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "href"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "href": {
+          "type": "string",
+          "pattern": "^https://[^\\s]+$"
+        }
+      }
+    }
+  }
+}

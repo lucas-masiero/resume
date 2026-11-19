@@ -1,0 +1,744 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Professional resume presentation v1",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "schema_version": {
+      "type": "integer",
+      "enum": [
+        1
+      ]
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "resume"
+      ]
+    },
+    "person": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "headline": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "location": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "portrait": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "contacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "email",
+                  "website",
+                  "linkedin",
+                  "phone"
+                ]
+              },
+              "label": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "href": {
+                "type": "string",
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "kind",
+              "label",
+              "href"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "name",
+        "contacts"
+      ],
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "subtitle": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "period": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "location": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "paragraphs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "bullets": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "href": {
+                  "type": "string",
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "label",
+                "href"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "title",
+          "paragraphs",
+          "bullets",
+          "links"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "technicalSkills": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "\\S"
+        }
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "proficiency": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "detail": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "name",
+          "proficiency"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "experience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "subtitle": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "period": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "location": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "paragraphs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "bullets": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "href": {
+                  "type": "string",
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "label",
+                "href"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "title",
+          "paragraphs",
+          "bullets",
+          "links"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "subtitle": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "period": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "location": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "paragraphs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "bullets": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "href": {
+                  "type": "string",
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "label",
+                "href"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "role": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "presentation": {
+            "type": "object",
+            "properties": {
+              "manifest": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "stylesheet": {
+                "type": "string",
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "manifest",
+              "stylesheet"
+            ],
+            "additionalProperties": false
+          },
+          "tools": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "title": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "description": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "programmingLanguage": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "\\S"
+                  }
+                },
+                "cover": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "links": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "pattern": "\\S"
+                      },
+                      "href": {
+                        "type": "string",
+                        "pattern": "\\S"
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "href"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "description",
+                "programmingLanguage",
+                "labels",
+                "cover",
+                "links"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "books": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "book",
+                    "paper"
+                  ]
+                },
+                "title": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "description": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "author": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "edition": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "\\S"
+                  }
+                },
+                "cover": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "pdfTeaser": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "links": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "pattern": "\\S"
+                      },
+                      "href": {
+                        "type": "string",
+                        "pattern": "\\S"
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "href"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "licenses": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "pattern": "\\S"
+                      },
+                      "href": {
+                        "type": "string",
+                        "pattern": "\\S"
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "href"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "media": {
+                  "type": "string",
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "id",
+                "kind",
+                "title",
+                "description",
+                "labels",
+                "cover",
+                "links",
+                "licenses"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "role",
+          "title",
+          "paragraphs",
+          "bullets",
+          "links"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "additionalSections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "title": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "column": {
+            "type": "string",
+            "enum": [
+              "sidebar",
+              "main"
+            ]
+          },
+          "paragraphs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "bullets": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "entries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "subtitle": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "period": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "location": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "paragraphs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "\\S"
+                  }
+                },
+                "bullets": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "\\S"
+                  }
+                },
+                "links": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "pattern": "\\S"
+                      },
+                      "href": {
+                        "type": "string",
+                        "pattern": "\\S"
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "href"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "title",
+                "paragraphs",
+                "bullets",
+                "links"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "column",
+          "paragraphs",
+          "bullets",
+          "entries"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "sources": {
+      "type": "object",
+      "properties": {
+        "resume_sha256": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "project_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        },
+        "pdf_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "resume_sha256",
+        "project_ids"
+      ],
+      "additionalProperties": false
+    },
+    "authoredBooks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "subtitle": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "period": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "location": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "paragraphs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "bullets": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "href": {
+                  "type": "string",
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "label",
+                "href"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "title",
+          "paragraphs",
+          "bullets",
+          "links"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "pdf": {
+      "type": "string",
+      "pattern": "^assets/[A-Za-z0-9._-]+\\.pdf$"
+    }
+  },
+  "required": [
+    "$schema",
+    "schema_version",
+    "kind",
+    "person",
+    "summary",
+    "education",
+    "technicalSkills",
+    "languages",
+    "experience",
+    "projects",
+    "additionalSections",
+    "sources"
+  ],
+  "additionalProperties": false
+}

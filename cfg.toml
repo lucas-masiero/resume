@@ -1,0 +1,12 @@
+schema_version = 1
+
+[defaults]
+output_dir = "output/pdf"
+
+[theme]
+select = "cohesian"
+template = "sidebar"
+page_size = "A4"
+
+[theme.typography]
+font_size = 9.0
