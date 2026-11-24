@@ -3,8 +3,8 @@
 The supplied `lucas-masiero-resume.pdf` (three A4 pages) is a historical
 reference, not an assertion that every field remains current.
 SHA-256: `027174fe096d2b4dd3a56f8fcf7f182a0d49ee3da6621a406a154838da299dbb`.
-The former `Profile/portfolio/content/resume.json` matched its sections and
-text and was used to recover structured Resumy v2 input without OCR.
+An earlier structured CV transcription matched its sections and text and
+was used to recover native Resumy v2 input without OCR.
 
 Experience dates, employers, responsibilities, education percentages and
 completion status, English C1, independent study and implementation limits are retained.
@@ -30,9 +30,7 @@ completed implementation was inferred. Employment and academic dates carried
 from the older CV still need the author’s review. This is a reorganized draft for review,
 not a claim that the supplied employment history is exhaustive through today.
 
-`resume.json` is the sole editable CV input. The PDF and `front/` are outputs;
-the earlier JSON in portfolio is a historical source, not a second CV input.
 
-The earlier `portfolio/content/resume.json` copy is retired from the active
-portfolio. Its previous version remains in that repository's history;
-`Profile/resume/resume.json` is the only authored CV input.
+resume.json remains the sole editable CV input. The PDF and its identically
+named JSON snapshot under output/pdf/ are native outputs. Presentation and
+field selection are outside this repository.

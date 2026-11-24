@@ -5,12 +5,6 @@
         "/resume.json"
       ],
       "url": "./schemas/resumy-cv-v2.schema.json"
-    },
-    {
-      "fileMatch": [
-        "/front/manifest.json"
-      ],
-      "url": "./schemas/resume-front.schema.json"
     }
   ]
 }
